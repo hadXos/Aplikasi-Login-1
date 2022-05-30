@@ -14,9 +14,11 @@ const expectedPassword = 'superpassword';
 
 loginFormElement.addEventListener('submit', function(event) {
   event.preventDefault();
-
+/*variable penampung nilai dari form email dan password*/
   const email = inputEmailElement.value;
   const password = inputPasswordElement.value;
+  
+  /*lalu cek apakah email dan password nya sama*/
   if (email == expectedEmail && password == expectedPassword) {
     goToHome();
   } else {
